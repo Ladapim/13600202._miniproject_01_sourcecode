@@ -12,6 +12,9 @@
 		7F23B1B52194ABCF005ACB34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F23B1B32194ABCF005ACB34 /* Main.storyboard */; };
 		7F23B1B72194ABD1005ACB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F23B1B62194ABD1005ACB34 /* Assets.xcassets */; };
 		7F23B1BA2194ABD1005ACB34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F23B1B82194ABD1005ACB34 /* LaunchScreen.storyboard */; };
+		7FAC7D2421969D8F00AFF694 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC7D2221969D8F00AFF694 /* ProgressHUD.m */; };
+		7FAC7D2521969D8F00AFF694 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7FAC7D2321969D8F00AFF694 /* ProgressHUD.bundle */; };
+		7FAC7D2721969DD200AFF694 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 7FAC7D2621969DD200AFF694 /* Model */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		7F23B1B62194ABD1005ACB34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F23B1B92194ABD1005ACB34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F23B1BB2194ABD1005ACB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FAC7D2021969D8E00AFF694 /* miniProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "miniProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		7FAC7D2121969D8F00AFF694 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		7FAC7D2221969D8F00AFF694 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		7FAC7D2321969D8F00AFF694 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		7FAC7D2621969DD200AFF694 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,7 @@
 		7F23B1A32194ABCF005ACB34 = {
 			isa = PBXGroup;
 			children = (
+				7FAC7D2621969DD200AFF694 /* Model */,
 				7F23B1AE2194ABCF005ACB34 /* miniProject */,
 				7F23B1AD2194ABCF005ACB34 /* Products */,
 			);
@@ -57,9 +66,13 @@
 				7F23B1AF2194ABCF005ACB34 /* AppDelegate.swift */,
 				7F23B1B12194ABCF005ACB34 /* ViewController.swift */,
 				7F23B1B32194ABCF005ACB34 /* Main.storyboard */,
+				7FAC7D2321969D8F00AFF694 /* ProgressHUD.bundle */,
+				7FAC7D2121969D8F00AFF694 /* ProgressHUD.h */,
+				7FAC7D2221969D8F00AFF694 /* ProgressHUD.m */,
 				7F23B1B62194ABD1005ACB34 /* Assets.xcassets */,
 				7F23B1B82194ABD1005ACB34 /* LaunchScreen.storyboard */,
 				7F23B1BB2194ABD1005ACB34 /* Info.plist */,
+				7FAC7D2021969D8E00AFF694 /* miniProject-Bridging-Header.h */,
 			);
 			path = miniProject;
 			sourceTree = "<group>";
@@ -96,6 +109,7 @@
 				TargetAttributes = {
 					7F23B1AB2194ABCF005ACB34 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -122,6 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FAC7D2721969DD200AFF694 /* Model in Resources */,
+				7FAC7D2521969D8F00AFF694 /* ProgressHUD.bundle in Resources */,
 				7F23B1BA2194ABD1005ACB34 /* LaunchScreen.storyboard in Resources */,
 				7F23B1B72194ABD1005ACB34 /* Assets.xcassets in Resources */,
 				7F23B1B52194ABCF005ACB34 /* Main.storyboard in Resources */,
@@ -135,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FAC7D2421969D8F00AFF694 /* ProgressHUD.m in Sources */,
 				7F23B1B22194ABCF005ACB34 /* ViewController.swift in Sources */,
 				7F23B1B02194ABCF005ACB34 /* AppDelegate.swift in Sources */,
 			);
@@ -282,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = miniProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -290,6 +308,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = th.ac.su.ict.ladapimvongkedtrachon.miniProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "miniProject/miniProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,6 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = miniProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,6 +328,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = th.ac.su.ict.ladapimvongkedtrachon.miniProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "miniProject/miniProject-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
